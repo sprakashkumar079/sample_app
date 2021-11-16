@@ -5,13 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : 2.5.1p57
 
-* System dependencies
+* System dependencies : Ubuntu
 
-* Configuration
+* Configuration : 8GB Memory
 
-* Database creation
+* Database creation : SQLite for development and testing and PostgreSQL for
+                      production
 
 * Database initialization
 
