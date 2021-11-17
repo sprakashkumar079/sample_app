@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   see https://guides.rubyonrails.org/routing.html
 =end
 
-  root 'application#hello'
+  root 'static_pages#home'
 =begin
   maps requests for the URL /static_pages/home to the home action in the Static
   Pages controller.
