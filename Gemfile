@@ -51,6 +51,12 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing', '1.0.4'
+  gem 'minitest', '5.14.4'
+  gem 'minitest-reporters', '1.3.8'
+  gem 'guard'
+  gem 'guard-minitest', '2.4.6'
+
 end
 
 # adding PostgreSQL database for production level
