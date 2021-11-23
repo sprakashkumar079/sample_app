@@ -12,8 +12,12 @@ class StaticPagesController < ApplicationController
   #Help has a corresponding view called help.html.erb .
   def help
   end
-  #about has a corresponding view called help.html.erb .
+  #about has a corresponding view called about.html.erb .
   def about
+  end
+
+  #contact has a corresponding view called contact.html.erb .
+  def contact
   end
 
 end
