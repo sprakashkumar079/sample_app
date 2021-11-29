@@ -13,7 +13,7 @@ class User < ApplicationRecord
   #secure password machinery will be implemented using a single Rails method
   has_secure_password
   #validation of password and length of password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   # Returns the hash digest of the given string.
 
   def User.digest(string)
