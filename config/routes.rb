@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   maps requests for the URL /static_pages/help to the help action in the Static
   Pages controller.
 =end
+
   root 'static_pages#home'
   get '/help', to: 'static_pages#help' #for help page
   get '/about', to: 'static_pages#about'  #for about

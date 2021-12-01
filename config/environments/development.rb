@@ -37,9 +37,20 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   # Don't use this literally; use your local dev host instead
-  host = 'example.com'
+  host = 'http://localhost:3000/'
   # Use this on the cloud IDE.
-  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: host }
+
+# SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => "singh.prakashkumar.ongraph@gmail.com",
+    :password             => "ongraph@81",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
   # Use this if developing on localhost.
   # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
