@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
 =begin
   maps requests for the URL /static_pages/help to the help action in the Static
   Pages controller.
@@ -18,5 +17,7 @@ Rails.application.routes.draw do
   resources :users
   #resources for account activation only for edit purpose.
   resources :account_activations, only: [:edit]
+  #resources for password reset following purpose.
+  resources :password_resets, only: [:new, :create, :edit, :update]
 
 end
