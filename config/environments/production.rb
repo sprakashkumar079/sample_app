@@ -16,7 +16,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  host = 'https://nameless-gorge-89102.herokuapp.com/'
+  host = 'https://nameless-gorge-89102.herokuapp.com'
   # Use this on the cloud IDE.
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: host }
