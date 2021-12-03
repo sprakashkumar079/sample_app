@@ -37,7 +37,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   # Don't use this literally; use your local dev host instead
-  host = 'http://localhost:3000/'
+  host = 'http://localhost:3000'
   # Use this on the cloud IDE.
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: host }
