@@ -1,0 +1,3 @@
+//adding js file for follow button
+$("#follow_form").html("<%= escape_javascript(render('users/unfollow')) %>");
+$("#followers").html('<%= @user.followers.count %>');
